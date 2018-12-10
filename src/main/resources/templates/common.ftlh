@@ -50,6 +50,10 @@
                 </div>
                 <div class="body">
                     ${notice.text?html}
+                        <small>
+                            <br>
+                            By ${notice.user.login}
+                        </small>
                 </div>
                 <div class="footer">
                     <a href="#">View all</a>

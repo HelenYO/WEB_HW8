@@ -27,7 +27,7 @@ public class User {
 
     @JsonIgnore
     @OneToMany
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
     @OrderBy("creationTime DESC")
     private List<Notice> notices;
 
